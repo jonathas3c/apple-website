@@ -56,3 +56,7 @@ Let's not forget to install Prettier with the command `npm install prettier`. In
     }
 }
 ```
+
+### Update assets and boilerplate code
+
+We'll be updating the assets for the code, populating all the assets we will be using at the public folder. Then, we need to update some boilerplate coed at the `index.css`(base styles that will be srving globally), the `src/constants/index.js`(constants that will handle all the texts from the app and other constant info) and the `src/utils/index.js`(utils that will handle all the assets import/export so we can only do it using shorthand notation).
