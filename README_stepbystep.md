@@ -60,3 +60,18 @@ Let's not forget to install Prettier with the command `npm install prettier`. In
 ### Update assets and boilerplate code
 
 We'll be updating the assets for the code, populating all the assets we will be using at the public folder. Then, we need to update some boilerplate coed at the `index.css`(base styles that will be srving globally), the `src/constants/index.js`(constants that will handle all the texts from the app and other constant info) and the `src/utils/index.js`(utils that will handle all the assets import/export so we can only do it using shorthand notation).
+
+Build project as usual: Navbar, Hero sections. When building hero section, let's install gsap to allow us to use the tweening functions to animate the hero section.
+
+```bash
+npm install gsap @gsap/react
+```
+
+We can use the example codes from the `Hero.jsx` file to see how to implement gsap animations. Basically, we can make all the components that will be animated to have an opacity of 0 initially, and then we animate the way this specific component will be set to opacity 1 usin the useGSAP hook, like below:
+
+```js
+useGSAP(() => {
+        gsap.to('#hero', {opacity: 1, delay: 2})
+        gsap.to('#cta', {opacity: 1, y:-50, delay: 2 })
+    }, [])
+```
