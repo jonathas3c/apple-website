@@ -38,22 +38,22 @@ Let's not forget to install Prettier with the command `npm install prettier`. In
 
 ```json
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.addMissingImports": true
-    },
-    "prettier.tabWidth": 2,
-    "prettier.useTabs": false,
-    "prettier.semi": true,
-    "prettier.singleQuote": false,
-    "prettier.jsxSingleQuote": false,
-    "prettier.trailingComma": "es5",
-    "prettier.arrowParens": "always",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "prettier.jsxSingleQuote": false,
+  "prettier.trailingComma": "es5",
+  "prettier.arrowParens": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
 ```
 
@@ -71,7 +71,7 @@ We can use the example codes from the `Hero.jsx` file to see how to implement gs
 
 ```js
 useGSAP(() => {
-        gsap.to('#hero', {opacity: 1, delay: 2})
-        gsap.to('#cta', {opacity: 1, y:-50, delay: 2 })
-    }, [])
+  gsap.to("#hero", { opacity: 1, delay: 2 });
+  gsap.to("#cta", { opacity: 1, y: -50, delay: 2 });
+}, []);
 ```

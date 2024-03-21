@@ -5,6 +5,5 @@
   "singleQuote": false,
   "jsxSingleQuote": false,
   "trailingComma": "es5",
-  "arrowParens": "always",
-  "ignore": ["node_modules/**", "dist/**"]
+  "arrowParens": "always"
 }
