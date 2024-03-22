@@ -75,3 +75,25 @@ useGSAP(() => {
   gsap.to("#cta", { opacity: 1, y: -50, delay: 2 });
 }, []);
 ```
+
+After building the `Hero` and `Highlight` with the video carousel, we will build the `Model` component, that will load the iPhone models for the user to interact. In order for us to do that we need to install the following libraries:
+
+```bash
+npm install three @react-three/drei @react-three/fiber
+```
+
+Remember that for each view we are going to render Three.js assets, we neet to define some elements, like `camera controls`, the `model` itself, and the `rotation`.
+
+```js
+//! Set camera controls
+const cameraControlSmall = useRef();
+const cameraControlLarge = useRef();
+
+//! Models
+const small = useRef(new THREE.Group());
+const large = useRef(new THREE.Group());
+
+//! rotation
+const [smallRotation, setSmallRotation] = useState(0);
+const [largeRotation, setLargeRotation] = useState(0);
+```
