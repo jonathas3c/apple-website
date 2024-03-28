@@ -44,14 +44,14 @@ const Features = () => {
 
 				<div className='flex flex-col items-center justify-center overflow-hidden'>
 					<div className='mb-24 mt-32 pl-24'>
-						<h2 className='text-5-xl font-semibold lg:text-7xl'>iPhone.</h2>
+						<h2 className='text-5xl font-semibold lg:text-7xl'>iPhone.</h2>
 						<h2 className='text-5xl font-semibold lg:text-7xl'>
 							Forged in titanium.
 						</h2>
 					</div>
 
 					<div className='flex-center flex-col sm:px-10'>
-						<div className='relative flex h-[50vh] w-full items-center'>
+						<div className='relative flex h-[50vh] w-full items-center pb-5'>
 							<video
 								playsInline
 								id='exploreVideo'
