@@ -12,7 +12,7 @@ const Features = () => {
 			scrollTrigger: {
 				trigger: '#exploreVideo',
 				toggleActions: 'play pause restart reset',
-				start: '10% bottom'
+				start: '-10% bottom'
 			},
 			onComplete: () => {
 				videoRef.current.play()
@@ -30,8 +30,7 @@ const Features = () => {
 			y: 0,
 			opacity: 1,
 			ease: 'power2.inOut',
-			duration: 1,
-			start: '0.5'
+			duration: 1
 		})
 	}, [])
 	return (
