@@ -27,7 +27,6 @@ canvas {
 	margin-inline-end: auto;
 	position: relative;
 	max-width: 1120px;
-	padding-right: 20px;
 }
 
 @layer utilities {
