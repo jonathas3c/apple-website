@@ -30,7 +30,8 @@ const Features = () => {
 			y: 0,
 			opacity: 1,
 			ease: 'power2.inOut',
-			duration: 1
+			duration: 1,
+			start: '0.5'
 		})
 	}, [])
 	return (
@@ -43,7 +44,7 @@ const Features = () => {
 				</div>
 
 				<div className='flex flex-col items-center justify-center overflow-hidden'>
-					<div className='mb-24 mt-32 pl-24'>
+					<div className='mb-24 mt-12 pl-24'>
 						<h2 className='text-5xl font-semibold lg:text-7xl'>iPhone.</h2>
 						<h2 className='text-5xl font-semibold lg:text-7xl'>
 							Forged in titanium.
