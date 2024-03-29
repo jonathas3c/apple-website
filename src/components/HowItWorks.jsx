@@ -11,7 +11,7 @@ const HowItWorks = () => {
 		gsap.from('#chip', {
 			scrollTrigger: {
 				trigger: '#chip',
-				start: '20% bottom'
+				start: '-20% bottom'
 			},
 			opacity: 0,
 			scale: 2,
@@ -72,7 +72,7 @@ const HowItWorks = () => {
 					</p>
 				</div>
 				<div className='hiw-text-container'>
-					<div className='flex flex-1 justify-center flex-col gap-5'>
+					<div className='flex flex-1 flex-col justify-center gap-5'>
 						<p className='hiw-text g_fadeIn'>
 							A17 Pro is an entirely new class of iPhone chip that delivers our{' '}
 							<span className='text-white'>
@@ -91,7 +91,7 @@ const HowItWorks = () => {
 							with it.
 						</p>
 					</div>
-					<div className='flex-1 flex justify-center flex-col g_fadeIn'>
+					<div className='g_fadeIn flex flex-1 flex-col justify-center'>
 						<p className='hiw-text'>New</p>
 						<p className='hiw-bigtext'>Pro-class GPU</p>
 						<p className='hiw-text'>with 6 cores</p>
