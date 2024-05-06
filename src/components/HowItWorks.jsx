@@ -55,7 +55,7 @@ const HowItWorks = () => {
 						</div>
 						<div className='hiw-video'>
 							<video
-								className='pointer-events-none'
+								className='videoPhone pointer-events-none'
 								playsInline
 								autoPlay
 								muted

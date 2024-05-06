@@ -8,23 +8,23 @@ Let's remove the default `.eslintrc.cjs` and make a json file of it with the fol
 
 ```json
 {
-  "extends": [
-    "standard",
-    "plugin:react/recommended",
-    "plugin:tailwindcss/recommended",
-    "prettier"
-  ],
-  "rules": {
-    "max-len": [2, 250],
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 1,
-        "maxEOF": 1
-      }
-    ],
-    "object-curly-newline": 0
-  }
+	"extends": [
+		"standard",
+		"plugin:react/recommended",
+		"plugin:tailwindcss/recommended",
+		"prettier"
+	],
+	"rules": {
+		"max-len": [2, 250],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxEOF": 1
+			}
+		],
+		"object-curly-newline": 0
+	}
 }
 ```
 
@@ -38,22 +38,22 @@ Let's not forget to install Prettier with the command `npm install prettier`. In
 
 ```json
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.addMissingImports": true
-  },
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.jsxSingleQuote": false,
-  "prettier.trailingComma": "es5",
-  "prettier.arrowParens": "always",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.addMissingImports": true
+	},
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": false,
+	"prettier.semi": true,
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
+	"prettier.trailingComma": "es5",
+	"prettier.arrowParens": "always",
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
 ```
 
@@ -71,9 +71,9 @@ We can use the example codes from the `Hero.jsx` file to see how to implement gs
 
 ```js
 useGSAP(() => {
-  gsap.to("#hero", { opacity: 1, delay: 2 });
-  gsap.to("#cta", { opacity: 1, y: -50, delay: 2 });
-}, []);
+	gsap.to('#hero', { opacity: 1, delay: 2 })
+	gsap.to('#cta', { opacity: 1, y: -50, delay: 2 })
+}, [])
 ```
 
 After building the `Hero` and `Highlight` with the video carousel, we will build the `Model` component, that will load the iPhone models for the user to interact. In order for us to do that we need to install the following libraries:
@@ -86,14 +86,14 @@ Remember that for each view we are going to render Three.js assets, we neet to d
 
 ```js
 //! Set camera controls
-const cameraControlSmall = useRef();
-const cameraControlLarge = useRef();
+const cameraControlSmall = useRef()
+const cameraControlLarge = useRef()
 
 //! Models
-const small = useRef(new THREE.Group());
-const large = useRef(new THREE.Group());
+const small = useRef(new THREE.Group())
+const large = useRef(new THREE.Group())
 
 //! rotation
-const [smallRotation, setSmallRotation] = useState(0);
-const [largeRotation, setLargeRotation] = useState(0);
+const [smallRotation, setSmallRotation] = useState(0)
+const [largeRotation, setLargeRotation] = useState(0)
 ```

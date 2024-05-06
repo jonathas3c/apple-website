@@ -29,6 +29,11 @@ canvas {
 	max-width: 1520px;
 }
 
+.videoPhone {
+	margin: 0 auto;
+	border-radius: 1vw;
+}
+
 @layer utilities {
 	.flex-center {
 		@apply flex items-center justify-center;
@@ -99,7 +104,7 @@ canvas {
 	}
 
 	.hiw-video {
-		@apply absolute w-[95%] h-[90%] rounded-[56px] overflow-hidden;
+		@apply absolute w-[95%] h-[90%] overflow-hidden;
 	}
 
 	.hiw-text-container {
