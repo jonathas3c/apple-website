@@ -1,16 +1,31 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
+let mm = gsap.matchMedia()
 
 export const animateWithGsap = (target, animationProps, scrollProps) => {
-	gsap.to(target, {
-		...animationProps,
-		scrollTrigger: {
-			trigger: target,
-			toggleActions: 'restart reverse restart reverse',
-			start: 'top 85%',
-			...scrollProps
-		}
+	mm.add('(max-width: 600px)', () => {
+		gsap.to(target, {
+			...animationProps,
+			scrollTrigger: {
+				trigger: target,
+				toggleActions: 'reverse play reverse play',
+				start: 'top 85%',
+				...scrollProps
+			}
+		})
+	})
+
+	mm.add('(min-width: 601px)', () => {
+		gsap.to(target, {
+			...animationProps,
+			scrollTrigger: {
+				trigger: target,
+				toggleActions: 'restart reverse restart reverse',
+				start: 'top 85%',
+				...scrollProps
+			}
+		})
 	})
 }
 
